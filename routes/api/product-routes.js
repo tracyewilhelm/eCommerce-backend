@@ -40,7 +40,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// create new product
+// create new product - not my code
 router.post("/", (req, res) => {
   /* req.body should look like this...
     {
@@ -72,7 +72,7 @@ router.post("/", (req, res) => {
     });
 });
 
-// update product
+// update product - not my code
 router.put("/:id", (req, res) => {
   // update product data
   Product.update(req.body, {
