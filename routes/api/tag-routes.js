@@ -53,7 +53,7 @@ router.put("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
-    if (!updateTag[i]) {
+    if (!updateTag[0]) {
       res.status(404).json({ message: "No match" });
       return;
     }
